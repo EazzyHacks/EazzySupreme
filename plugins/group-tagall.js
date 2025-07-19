@@ -14,11 +14,11 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
 function pickRandom(list) {
 return list[Math.floor(list.length * Math.random())]
 }
-  let teks = `╭─────────\n│❏ 𝗔𝘀𝗵 𝗕𝗼𝘁 𝗧𝗲 𝗘𝘀𝘁𝗮 𝗜𝗻𝘃𝗼𝗰𝗮𝗻𝗱𝗼 𝗣𝘂𝘁𝗶𝘁𝗮 🤖\n│❏ ${emot}𝗟𝗼𝘃𝗲𝗿𝘀: *${participants.length}* ${oi}\n│❏ 𝗔𝘀𝗵 𝗕𝗼𝘁\n│\n`;
+  let teks = `╭─────────\n│❏ 𝐄𝐚𝐳𝐳𝐲 𝐒𝐮𝐩𝐫𝐞𝐦𝐞 𝗧𝗲 𝗘𝘀𝘁𝗮 𝗜𝗻𝘃𝗼𝗰𝗮𝗻𝗱𝗼 𝗣𝘂𝘁𝗶𝘁𝗮 🤖\n│❏ ${emot}𝗟𝗼𝘃𝗲𝗿𝘀: *${participants.length}* ${oi}\n│❏ 𝐄𝐚𝐳𝐳𝐲 𝐒𝐮𝐩𝐫𝐞𝐦𝐞\n│\n`;
   for (const mem of participants) {
     teks += `│🤖 @${mem.id.split('@')[0]}\n`;
   }
-  teks += `│\n╰𝗔𝘀𝗵 𝗕𝗼𝘁 🤖`;
+  teks += `│\n╰𝐄𝐚𝐳𝐳𝐲 𝐒𝐮𝐩𝐫𝐞𝐦𝐞 🤖`;
   conn.sendMessage(m.chat, {text: teks, mentions: participants.map((a) => a.id)} );
 };
 handler.help = ['tagall <mesaje>', 'invocar <mesaje>'];
