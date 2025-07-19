@@ -47,7 +47,7 @@ var handler = async function (m, conn, db) {
 
     // Lista de canales
     let canalIdM = ["120363419947391620@newsletter", "120363419947391620@newsletter"]
-    let canalNombreM = ["Ash - Ultra 🤍", "Ash - Referencias 🤍"]
+    let canalNombreM = ["🐺 𝐄𝐚𝐳𝐳𝐲 𝐒𝐮𝐩𝐫𝐞𝐦𝐞 𝐌𝐞𝐣𝐨𝐫 𝐁𝐨𝐭 🐺", "🐺 𝐄𝐚𝐳𝐳𝐲 𝐒𝐮𝐩𝐫𝐞𝐦𝐞 𝐌𝐞𝐣𝐨𝐫 𝐁𝐨𝐭 🐺"]
     
     async function getRandomChannel() {
         let randomIndex = Math.floor(Math.random() * canalIdM.length)
@@ -104,9 +104,9 @@ var handler = async function (m, conn, db) {
             externalAdReply: { 
                 showAdAttribution: true, 
                 title: "Texto del bot", 
-                body: 'Ash - Ultra 🤍', 
+                body: '🐺 𝐄𝐚𝐳𝐳𝐲 𝐒𝐮𝐩𝐫𝐞𝐦𝐞 𝐌𝐞𝐣𝐨𝐫 𝐁𝐨𝐭 🐺', 
                 previewType: "PHOTO", 
-                thumbnailUrl: "https://qu.ax/EebvE.jpeg", 
+                thumbnailUrl: "https://files.catbox.moe/mrtzyt.jpg", 
                 sourceUrl: "https://chat.whatsapp.com/IWbZfzvPNZB359FmjMBi0V?mode=ac_t", 
                 mediaType: 1, 
                 renderLargerThumbnail: false 
