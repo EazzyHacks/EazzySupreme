@@ -11,7 +11,6 @@ const textCyberpunk = (text) => {
 }
 
 let tags = {
-  'ventas': textCyberpunk('Ventas Ash'),
   'freefire': textCyberpunk('Free Fire Sur'),
   'freefireeu': textCyberpunk('Free Fire Eu'),
 }
@@ -33,7 +32,7 @@ const defaultMenu = {
 
 🧬 *M𝗢𝗗𝗢 𝗛𝗔𝗖𝗞 𝗔𝗖𝗧𝗜𝗩𝗔𝗗𝗢*
 ✦ Elige un comando para ejecutar protocolo.
-✦ Operador: *Ash Bot 👑*%readmore`.trimStart(),
+✦ Operador: *Eazzy Bot 👑*%readmore`.trimStart(),
 
   header: '\n╭─〔 🦠 %category 〕─╮',
   body: '│ ⚙️ %cmd',
@@ -97,13 +96,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 
     let text = _text.replace(/%(\w+)/g, (_, key) => replace[key] || '')
 
-    await conn.sendMessage(m.chat, {
-    text: `⌬ 📡 ᴄʏʙᴇʀ ᴍᴇɴᴜ sʏsᴛᴇᴍ ɪɴɪᴄɪᴀɴᴅᴏ...\n⚙️ Cargando comandos...`,
-      mentions: [m.sender]
-    }, { quoted: m })
+  
 
     await conn.sendMessage(m.chat, {
-      image: { url: 'https://qu.ax/EebvE.jpeg' },
+      image: { url: 'https://files.catbox.moe/mrtzyt.jpg' },
       caption: text,
       footer: '🧠 ASH X SYSTEM ☘️',
       viewOnce: false
@@ -118,7 +114,6 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
 handler.help = ['menu', 'menú']
 handler.tags = ['main']
 handler.command = ['menu', 'menú', 'help', 'ayuda']
-handler.register = false
 export default handler
 
 function clockString(ms) {
